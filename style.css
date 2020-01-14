@@ -1,0 +1,83 @@
+#container{
+    margin: 0 auto;
+    width: 1000px;
+}
+#header{
+    width: 100%;
+}
+#header-none{
+    height: 4px;
+    background-color:#ffffff;
+    width: 100%;
+}
+#header-top{
+    height: 30px;
+    background-color: #ffffff;
+    width: 100%;
+}
+#header-bottom{
+    height: 95px;
+    background-color: black;
+    width: 100%;
+}
+#header-top-left, #header-top-right{
+    height: 100%;
+}
+#contact{
+   
+    color:#696969;
+    /* color: #e1e1e1; */
+    
+}
+.georgia-12{
+    font-family: Georgia;
+    font-size: 12px;
+}
+.arial-12{
+    font-family: Arial;
+    font-size: 12px;
+}
+.menu-border{
+height: 35px;
+border-left-width: 1px;
+border-left-style:solid;
+border-left-color: #828282;
+}
+#search-container{
+    width:412 px;
+    height: 13.8 px;
+}
+#search{
+    border-radius: 20px;
+}
+#logo{
+    padding-top: 20px;
+}
+#slider{
+    height: 383px;
+    background-color:#333333;
+    width: 100%;
+}
+#shout{
+    height: 170px;
+    width: 100%;
+}
+#lastest-work{
+    height: 365px;
+    width: 100%;
+}
+#content{
+    height: 433px;
+    width: 100%;
+}
+#fotter{
+    height: 335px;
+    width: 100%;
+}
+#coppyright{
+    height: 56px;
+    width: 100%;
+}
+#menu{
+    background-color: unset;
+}
