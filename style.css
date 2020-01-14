@@ -61,10 +61,28 @@ border-left-color: #828282;
 #shout{
     height: 170px;
     width: 100%;
+    
+}
+#shout>p{
+    padding:50px 42px 50px 43px;
+    font-family: Georgia;
+    font-size: 28px;
+    text-align: center;
+    font-style: italic;
+    line-height: 42px;
 }
 #lastest-work{
     height: 365px;
     width: 100%;
+    border-bottom-style :solid;
+    border-top-style: solid;
+}
+.card-list{
+    padding-top: 55px;
+}
+.lastest-div{
+    color: #333333;
+    float: left;
 }
 #content{
     height: 433px;
@@ -73,6 +91,7 @@ border-left-color: #828282;
 #fotter{
     height: 335px;
     width: 100%;
+    background-color: #222222;
 }
 #coppyright{
     height: 56px;
@@ -81,3 +100,14 @@ border-left-color: #828282;
 #menu{
     background-color: unset;
 }
+#header-c-left #header-c-right{
+    height: 79px;
+    width: 100%;
+}
+#header-c-left>a{
+    float: right;
+}
+#header-c-left>p{
+    float: left;
+}
+
