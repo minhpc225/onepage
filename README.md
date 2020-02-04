@@ -1,6 +1,6 @@
 # Hướng dẫn cài đặt Graphhopper
 ## Yêu cầu:
-1. jdk 8 trở lên:
+- jdk 8 trở lên:
 Sử dụng lệnh `java --vesion` để kiểm tra:
 Nếu đã cài đặt thì kết quả sẽ có dạng:
 ```bash
