@@ -34,3 +34,31 @@ sudo apt install git
 ```
 
 Kiểm tra lại với `git --version` để chắc chắn bạn đã cài đặt thành công
+
+### 3. File web config
+
+https://raw.githubusercontent.com/graphhopper/graphhopper/master/config-example.yml
+
+### 4. File jar
+
+Vào đường link https://oss.sonatype.org/content/groups/public/com/graphhopper/graphhopper-web/1.0-SNAPSHOT/ và tải bản jar mới nhất
+
+### 5. OSM data
+
+Truy cập http://download.geofabrik.de/asia/vietnam.html và download file pbf của khu vực sử dụng
+
+### File config, jar, osm data copy vào thư mục root của graphhopper
+aphhopper
+## Tiến hành xây dựng web server
+
+Clone source code: 
+```bash git clone git://github.com/graphhopper/graphhopper.gitgraphhopper-web-1.0-20200130.134108-163
+cd graphhopper; git checkout 0.13
+```
+
+Khởi tạo server ví dụ với osm data là `vietnam-lastest.osm.pbf` và jar `graphhopper-web-1.0-20200130.134108-163.jar`:
+```bash
+java-Dgraphhopper.datareader.file=vietnam-lastest.osm.pbf -jar graphhopper-web-1.0-20200130.134108-163.jar server config-example.yml
+```
+
+Truy cập http://localhost:8989/maps/
