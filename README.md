@@ -9,7 +9,7 @@
     
    - car: đường di chuyển cho ô tô
    - bike: đường di chuyển cho xe 2 bánh
-   - bike 2: đường di chuyển cho xe 2 bánh có sử dụng độ cao ( Cần phải [thêm dữ liệu độ cao][1] vào đồ thị)
+   - bike 2: đường di chuyển cho xe 2 bánh có sử dụng độ cao ( Cần phải thêm dữ liệu độ cao vào đồ thị)
    - mtb: xe leo núi
    - racingbike
    - motocycle: xe gắn máy
@@ -28,16 +28,14 @@
     
    - surface,max_width,max_height,max_weight,max_axle_load,max_length,hazmat,hazmat_tunnel,hazmat_water,toll,track_type.
 
-   ### Nếu nhiều `graph.flag_encoders` và `graph.encoded_values` được sử dụng `graph.bytes_for_flags` nên được đặt là 8 hoặc hơn( bội của 4)
-    
-    `graph.bytes_for_flags: 8`
+   Nếu nhiều `graph.flag_encoders` và `graph.encoded_values` được sử dụng `graph.bytes_for_flags` nên được đặt là 8 hoặc hơn( bội của 4): `graph.bytes_for_flags: 8`
 
     
 ## Độ cao(Elevation)
 
    ### Thêm dữ liệu độ cao vào đồ thị:
     
-   [1]: graph.elevation.provider: srtm( mặc định là `graph.elevation.provider: noop`:không sử dụng dữ liệu độ cao)
+   graph.elevation.provider: srtm( mặc định là `graph.elevation.provider: noop`:không sử dụng dữ liệu độ cao)
     
    ### Đặt đường dẫn cho bộ đệm.
    
