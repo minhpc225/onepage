@@ -98,19 +98,19 @@
    Thêm `routing.lm.disabling_allowed: true` để cho phép disable hybird mode
    
    ### giới hạn khoảng cách tối đa giữa 2 điểm tham chiếu sử dụng flexible request 
-        `routing.non_ch.max_waypoint_distance: 1000000` (đơn vị là m, mặc định 1000km)
+   `routing.non_ch.max_waypoint_distance: 1000000` (đơn vị là m, mặc định 1000km)
 
 ## Storage 
     
-   ## cấu hình quyền truy cập bộ nhớ, mặc định và nên sử dụng là:
+   ### cấu hình quyền truy cập bộ nhớ, mặc định và nên sử dụng là:
    
    `graph.dataaccess: RAM_STORE`
    
-   ## chọn ngôn ngữ cho tên đường, mã ngôn ngữ theo tiêu chuẩn ISO 639-1 hoặc ISO 639-2
+   ### chọn ngôn ngữ cho tên đường, mã ngôn ngữ theo tiêu chuẩn ISO 639-1 hoặc ISO 639-2
    
    `datareader.preferred_language: vi`
    
-   ## sắp xếp lại đồ thị sau khi import sẽ làm tăng tốc độ truy vấn khaongr 10% và sẽ sử dụng nhiều ram hơn
+   ### sắp xếp lại đồ thị sau khi import sẽ làm tăng tốc độ truy vấn khaongr 10% và sẽ sử dụng nhiều ram hơn
    
    `graph.do_sort: true`
 
