@@ -28,7 +28,7 @@
     
    - surface,max_width,max_height,max_weight,max_axle_load,max_length,hazmat,hazmat_tunnel,hazmat_water,toll,track_type.
 
-   Nếu nhiều `graph.flag_encoders` và `graph.encoded_values` được sử dụng `graph.bytes_for_flags` nên được đặt là 8 hoặc hơn( bội của 4): `graph.bytes_for_flags: 8`
+   Nếu nhiều `graph.flag_encoders` và `graph.encoded_values` được sử dụng `graph.bytes_for_flags` nên được đặt là 8 hoặc hơn( bội của 4): graph.bytes_for_flags: 8
 
     
 ## Độ cao(Elevation)
