@@ -1,7 +1,9 @@
 
 ## Vehicle(phương tiện)
 
-   ### Lựa chọn phương tiện di chuyển sử dụng `graph.flag_encoders`
+   ### Lựa chọn phương tiện di chuyển
+   
+   Sử dụng `graph.flag_encoders`
 
    Các tùy chọn:
     
@@ -14,7 +16,9 @@
    - turn_costs: thêm giá trị cho mỗi lần rẽ cho car hoặc motocycle
         vd: `graph.flag_encoders: car|turn_cost=true`
     
-   ### Thêm thông tin cho đường phục vụ việc tính toán `graph.encoded_values`
+   ### Thêm thông tin cho đường phục vụ việc tính toán 
+   
+   Sửu dụng `graph.encoded_values`
     
    [Mặc định](https://github.com/graphhopper/graphhopper/pull/1548) : road_class,road_class_link,road_environment,max_speed,road_access 
     
@@ -31,9 +35,9 @@
     
 ## Độ cao(Elevation)
 
-   ### Thêm dữ liệu độ cao vào đồ thị:[1]
+   ### Thêm dữ liệu độ cao vào đồ thị:
     
-   graph.elevation.provider: srtm( mặc định là `graph.elevation.provider: noop`:không sử dụng dữ liệu độ cao)
+   [1]: graph.elevation.provider: srtm( mặc định là `graph.elevation.provider: noop`:không sử dụng dữ liệu độ cao)
     
    ### Đặt đường dẫn cho bộ đệm.
    
