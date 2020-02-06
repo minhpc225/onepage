@@ -51,11 +51,11 @@
     
    kích hoạt:
     
-    `prepare.ch.weightings: fastest`
+   `prepare.ch.weightings: fastest`
     
    để kích hoạt sử dụng turn cost:
     
-    `prepare.ch.weightings: fastest|u_turn_cost=30` 
+   `prepare.ch.weightings: fastest|u_turn_cost=30` 
     
    trong đó 30 là turn_cost trong 1s
     
@@ -63,19 +63,19 @@
     
    tắt speed mode:
     
-    `prepare.ch.weightings: no`
+   `prepare.ch.weightings: no`
     
-    `prepare.ch.threads: 1` ????
+   `prepare.ch.threads: 1` ????
     
    ### hybird mode
     
    kích hoạt:
     
-    `prepare.lm.weightings: fastest`
+   `prepare.lm.weightings: fastest`
     
    điều chỉnh hiệu suất và bộ nhớ:
     
-    `prepare.lm.landmarks: [int]`
+   `prepare.lm.landmarks: [int]`
     
     `prepare.lm.threads: 1`??
     
@@ -88,26 +88,39 @@
 ## Routing
    
    ### chọn số nút được duyệt tối đa:
-        `routing.max_visited_nodes:100000`( mặc định là Interger.MAX_VALUE)
-   Nếu giá trị `routing.max_visited_nodes:100000` được khởi tạo, flexible mode có thể được chạy ngay cả khi speed mode hoặc hybird mode được bật nếu ch.disable=true
+   
+   `routing.max_visited_nodes:100000`( mặc định là Interger.MAX_VALUE)
+   
+   Nếu giá trị `routing.max_visited_nodes:100000` được khởi tạo, flexible mode có thể được chạy ngay cả khi speed mode hoặc hybird mode được bật nếu ch.disable=true(cho speed mode) hoặc lm.disable=true(cho hybird mode)
+   
    Thêm `routing.ch.disabling_allowed: true` để cho phép disable speed mode
+   
    Thêm `routing.lm.disabling_allowed: true` để cho phép disable hybird mode
+   
    ### giới hạn khoảng cách tối đa giữa 2 điểm tham chiếu sử dụng flexible request 
         `routing.non_ch.max_waypoint_distance: 1000000` (đơn vị là m, mặc định 1000km)
 
 ## Storage 
     
    ## cấu hình quyền truy cập bộ nhớ, mặc định và nên sử dụng là:
-        `graph.dataaccess: RAM_STORE`
+   
+   `graph.dataaccess: RAM_STORE`
+   
    ## chọn ngôn ngữ cho tên đường, mã ngôn ngữ theo tiêu chuẩn ISO 639-1 hoặc ISO 639-2
-        `datareader.preferred_language: vi`
+   
+   `datareader.preferred_language: vi`
+   
    ## sắp xếp lại đồ thị sau khi import sẽ làm tăng tốc độ truy vấn khaongr 10% và sẽ sử dụng nhiều ram hơn
-        `graph.do_sort: true`
+   
+   `graph.do_sort: true`
 
 ## Spatial Rules
 
    ### dữ liệu không gian yêu cầu 1 số cấu hình và cung cấp polygon với 1 số quy tắc được đặt mặc định tại:
-        `spatial_rules.location: core/files/spatialrules/countries.geo.json`
+   
+   `spatial_rules.location: core/files/spatialrules/countries.geo.json`
+   
    ### giới hạn độ lớn của bbox
-        `spatial_rules.max_bbox: -180,180, -90,90`
+   
+   `spatial_rules.max_bbox: -180,180, -90,90`
     
